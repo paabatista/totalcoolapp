@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo_keto.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    /> -->
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Keto Para tu Bolsillo"
+      content="Las Mejores Recetas Keto o Cetogenicas y bajas en carbohidratos"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <title>Keto para tu Bolsillo</title>
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- <link rel="stylesheet" href="bootstrap.min.css" /> -->
+     <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script> 
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+      data-dojo-config="usePlainJson: true, isDebug: false"
+    ></script>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <script type="text/javascript">
+
+setTimeout(function() {
+  $(".owl-carousel").owlCarousel({
+    items:4,
+    loop:true,
+    autoplay: false,
+    nav:true,
+    ladyLoad:true,
+  });
+
+
+  document.querySelector('.owl-item').addEventListener('mouseover', event => {
+    console.log(event);
+    //event.target.style.display = "orange";
+  
+});
+   
+  // highlight the mouseover target
+  
+}, 2000);
+
+
+var owl = $('.owl-carousel');
+
+// get owl instance from element
+var owlInstance = owl.data('owlCarousel');
+
+// if instance is existing
+if(owlInstance != null)
+    owlInstance.reinit();
+
+
+      window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
+        L.start({
+          baseUrl: "mc.us8.list-manage.com",
+          uuid: "cee7358dfe17ef3c1dd92159e",
+          lid: "f42a43e46b",
+          uniqueMethods: true,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <noscript>Las Mejores Recetas Keto o Cetogenicas y bajas en carbohidratos</noscript>
+    <div id="root"></div>
+  </body>
+  <script src="owlcarousel/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+</html>

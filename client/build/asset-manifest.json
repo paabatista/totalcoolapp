@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.668c0425.chunk.css",
+    "main.js": "./static/js/main.d76a3158.chunk.js",
+    "main.js.map": "./static/js/main.d76a3158.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.5281efe5.js",
+    "runtime-main.js.map": "./static/js/runtime-main.5281efe5.js.map",
+    "static/css/2.da6e3115.chunk.css": "./static/css/2.da6e3115.chunk.css",
+    "static/js/2.a16e3f09.chunk.js": "./static/js/2.a16e3f09.chunk.js",
+    "static/js/2.a16e3f09.chunk.js.map": "./static/js/2.a16e3f09.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.f6d624eb615289ee48e4c2a02e064f3c.js": "./precache-manifest.f6d624eb615289ee48e4c2a02e064f3c.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.da6e3115.chunk.css.map": "./static/css/2.da6e3115.chunk.css.map",
+    "static/css/main.668c0425.chunk.css.map": "./static/css/main.668c0425.chunk.css.map",
+    "static/js/2.a16e3f09.chunk.js.LICENSE.txt": "./static/js/2.a16e3f09.chunk.js.LICENSE.txt",
+    "static/media/style.css": "./static/media/pancake_keto_750x750.33fec84b.jpg",
+    "static/media/bootstrap.min.css": "./static/media/glyphicons-halflings-regular.fa277232.woff",
+    "static/media/leche_almendras.jpeg": "./static/media/leche_almendras.f9aceecf.jpeg",
+    "static/media/pancake_keto_396x703.jpg": "./static/media/pancake_keto_396x703.4c69fd7b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5281efe5.js",
+    "static/css/2.da6e3115.chunk.css",
+    "static/js/2.a16e3f09.chunk.js",
+    "static/css/main.668c0425.chunk.css",
+    "static/js/main.d76a3158.chunk.js"
+  ]
+}

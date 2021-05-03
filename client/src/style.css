@@ -1,0 +1,2498 @@
+/* @import url('google fonts here')#edead6 */
+
+:root {
+  --body-background: #ffffff !important;
+  --nav-link-color: #888;
+  --nav-link-color-hover: #000;
+  --nav-height: 50px;
+  --keto-cheese: #f9ab0d;
+  --keto-milk: #6ed0e9;
+  --keto-pepperoni: #ec1348;
+  --keto-blueberry: #5575c2;
+  --keto-hsl: hsl(40, 100%, 51%);
+
+  --indi-article-date: #949494;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+a {
+  background-color: transparent;
+  color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1{
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+
+  letter-spacing: 0.03rem;
+  margin: 1.5rem 0;
+}
+/* RATING STARS */
+
+.fa-star {
+  color: var(--keto-blueberry);
+  font-size: 25px;
+}
+.checked {
+  color: var(--keto-cheese);
+}
+/* SACRAMENTO FONT  */
+/* latin-ext */
+@font-face {
+  font-family: "Sacramento";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Sacramento"), local("Sacramento-Regular"),
+    url(buEzpo6gcdjy0EiZMBUG4CMf_exL.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Sacramento";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Sacramento"), local("Sacramento-Regular"),
+    url(buEzpo6gcdjy0EiZMBUG4C0f_Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* OSWALD FONT */
+/* cyrillic-ext */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUtiZSSShiC_AA.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUJiZSSShiC_AA.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUliZSSShiC_AA.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUhiZSSShiC_AA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUZiZSSShiA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+.navbar {
+  /* font-family: 'BeautySalon */
+  /* min-height: 183px; */
+  padding: 0px;
+  z-index: 99 !important;
+  /* min-height: 183px!important; */
+  /* max-width: 700px !important; */
+  /* color:#888!important; */
+  /* padding: auto 0; */
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  background: #fff !important;
+  /* box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7) !important; */
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* margin: 0;
+    padding: 0; */
+  max-width: 100% !important;
+  /* width: 100vw; */
+  /* border: solid 1px green; */
+  font-family: Oswald;
+}
+.enfasis {
+  color: var(--keto-cheese);
+}
+#root {
+  /* position: relative; */
+  min-height: 70vh;
+  z-index: 1;
+  background: var(--body-background);
+}
+#root .container {
+  min-height: 40vh;
+  width: 57%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.app-wrapper {
+  display: block;
+}
+
+.texto-logo {
+  height: 100px;
+}
+header {
+  background: #fff;
+}
+body {
+  background-color: var(--body-background);
+  color: #4a5568 !important;
+  /* color: rgba(0,0,0,.6); */
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  line-height: 1.9;
+  /* margin: 0;
+    padding: 0;
+    max-width: 100vw!important; */
+}
+
+#homepage {
+  position: relative;
+  background-color: var(--body-background);
+  width: 100%;
+  z-index: 4 !important;
+
+  /* margin-top: 130px; */
+}
+
+.carousel__calculadora{
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+
+/* HOMEPAGE CARDS CSS */
+
+.wrap {
+  max-width: calc(100% - 20px);
+  position: relative;
+  margin: 0 auto;
+}
+.recetas-cards-container {
+  display: flex;
+  margin-left: -7px;
+  margin-right: -11px;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  color: keto-;
+}
+.cards-bg {
+  margin-top: -10px;
+  background-image: url("./avocado_cheese3.jpg");
+  background-repeat: repeat;
+}
+.recetas-cards-container .card {
+  width: calc(1 / 4 * 100% - 16px) !important;
+
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4) !important;
+  /* box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4) !important; */
+  /* border-radius: 14px !important; */
+  border-radius: 0 0 20px 20px !important;
+  text-align: center;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 20px;
+  z-index: 1;
+  border: 0 !important;
+  margin-bottom: 20px;
+}
+.card .card-body {
+  padding: 0.7rem;
+}
+
+.card-wrap-title {
+  padding-top: 18px;
+  text-align: center;
+  font-family: Oswald;
+  letter-spacing: 0.9px;
+}
+.card .card-tags {
+  position: absolute;
+
+  border: 1px solid green;
+}
+.card-image:hover {
+  opacity: 0.45;
+
+  transition: ease-in-out 0.4s;
+}
+
+.pancake-keto .card-image {
+  background-image: url("./components/img/5f42da0a071e496730375701.jpg") !important;
+}
+
+.dalgona-coffee .card-image {
+  background-image: url("./components/img/5ee93076071e4967303756ff.jpg") !important;
+}
+
+.champinones .card-image {
+  background-image: url("./components/img/5f42d94a071e496730375700.jpg") !important;
+  background-size: 130% !important;
+}
+.keto-empanadas .card-image {
+  background-image: url("./components/img/5f42da83071e496730375702.jpg") !important;
+  background-size: 215% !important;
+} 
+.card .card-image {
+  transition: ease-in-out 0.4s;
+  /* max-height: 156px !important; */
+  min-height: 365px;
+  background-repeat: no-repeat !important;
+  background-size: 100% ;
+  /* max-width: 100%;
+  width: 100% !important; */
+  /* border-top-left-radius: inherit;
+  border-top-right-radius: inherit; */
+}
+/* HOMEPAGE CARDS CSS */
+
+.receta {
+  max-width: 100vw !important;
+  width: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.receta-header {
+  border-bottom: 2px solid #e9e9e9;
+}
+
+.receta-details {
+  margin-left: -5px !important;
+  margin: 16px 0;
+  font-family: Oswald;
+  letter-spacing: 0.05rem;
+}
+
+.receta-details .material-icons {
+  font-size: initial;
+}
+
+.receta-details a {
+  height: 100%;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 6px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  border-right: 1px solid;
+  color: var(--keto-blueberry);
+}
+
+.receta-details a:last-of-type {
+  border-right: 0;
+}
+
+.wprm-recipe-jump {
+  display: inline-block;
+}
+
+.content {
+  max-width: 650px !important;
+  width: 100%;
+
+  margin-right: 30px;
+}
+
+.content p {
+  margin: 12px 0;
+}
+
+.site-wrapper {
+  max-width: 1020px !important;
+  margin: 16px auto;
+  display: block;
+}
+.sidebar {
+  margin-top: 3% !important;
+  margin: 0;
+  /* border: 1px solid green; */
+  max-width: 340px;
+  width: 340px;
+  min-height: 100vh;
+  margin-right: 4%;
+}
+.side-bar {
+  min-height: 40vh;
+}
+.content .card-header {
+  /* text-decoration: none; */
+
+  font-family: Oswald;
+}
+
+.indi-article .card {
+  border-radius: 12px !important;
+  margin-top: 1.7rem !important;
+}
+.indi-article .card .date {
+  color: var(--indi-article-date);
+  /*  */
+}
+.content .card-text {
+  font-size: 18px;
+
+  letter-spacing: 0.03rem;
+  margin: 1.5rem 0;
+}
+.content .card-text img {
+  max-width: 100%;
+  /*  */
+}
+
+.content ul a {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  color: inherit;
+  letter-spacing: 0.03rem;
+}
+
+.content p {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.7;
+  font-size: 18px;
+  color: inherit;
+  letter-spacing: 0.03rem;
+}
+.article__tags {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+   margin-top: 1rem !important;
+  /*  */
+}
+.article__tags__span {
+  margin-bottom: 1rem !important;
+  width: 100%;
+
+  /*  */
+}
+
+.article__tags a {
+  font-family: Oswald;
+  letter-spacing: 0.05rem; 
+  text-decoration: none;
+  color: #888;
+    border-radius: 7px;
+  text-transform: uppercase;
+    padding: 1px 5px;
+    font-size: 10px;
+    text-align: center;
+    margin: .8%;
+    background: #f4f4f4;
+    display: inline-block;
+    float: left;
+ }
+
+.article__tags .Keto {
+  font-family: Oswald;
+  letter-spacing: 0.05rem;
+  font-size: 17px;
+  text-decoration: none;
+  color: #888;
+  
+  border-radius: 7px;
+}
+
+/* styling de tags por categoria   */
+.article__tags .Keto:hover {
+  color: white;
+  background-color: var(--keto-pepperoni);
+}
+
+/*  styling para categorias genericas, se necesita poner color a cada categoria*/
+.article__tags a:hover {
+  color: white;
+  background-color: var(--keto-milk);
+}
+
+.container .align-middle {
+  margin-top: 2rem;
+  margin-bottom: 0px !important;
+  min-height: 70vh;
+}
+
+.article-wrap {
+  min-height: 70vh;
+  /* width: 90%; */
+  background: var(--body-background);
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+}
+
+.article-wrap img {
+  max-width: 700px;
+  min-height: 80%;
+}
+
+.post-cards {
+  /* width: 25%; */
+  padding: 1px !important;
+  margin: 35px !important;
+}
+
+.article-wrap .card-header a {
+  text-decoration: none;
+  color: #888;
+  font-family: Oswald;
+}
+.article-wrap .card-header a:hover {
+  text-decoration: none;
+  color: var(--keto-cheese);
+}
+
+.carousel-inner {
+  /* height:100vh!important; */
+  /* width: 100%; */
+  /* max-width:700px; */
+  /*     max-height: 1000px;   */
+}
+
+.article-wrap {
+  padding-top: 1rem !important;
+}
+
+.lista__articulos .card{
+  text-align: center;
+  width: calc(1 / 4 * 100% - 16px) !important;
+  margin-top: 20px;
+  
+}
+
+.lista__articulos h2{
+  font-size: 20px;
+  margin-top: 0 !important;
+}
+.lista__articulos .card-image{
+  min-height: 240px !important;
+  max-height: 240px !important;
+}
+
+.article-wrap article .card {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 14px !important;
+  text-align: center;
+  padding: 12px;
+  /* width:100%!important; */
+  max-width: 430px !important;
+  max-height: min-content;
+}
+
+#featured-img {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4) !important;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 540px;
+  margin: 0 auto;
+  border-radius: 7px 7px 0 0;
+  height: 500px;
+  /* max-width: 1020px; */
+
+  width: calc(100% -10px);
+  border-radius: 14px;
+  
+}
+.carousel__row{
+  
+}
+.carousel__calculadora{
+  background-image: url(carousel_bg.png);
+  height: 300px;
+  text-align: center;
+  
+}
+.carousel__calculadora::before{
+  content: '';
+    display: block;
+    width: 33px;
+    height: 43px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: .4s;
+    margin: 0 auto;
+    background-image: url(macro-calculator.svg);
+    
+
+}
+
+.item__overlay{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 165px;
+  -webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  height: 165px;
+  border-radius: 50%;
+  margin-left: 9px;
+ 
+}
+
+.item__overlay:hover {
+  opacity: 1;
+ 
+ 
+}
+
+
+.carousel__carousel{
+ 
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
+   
+}
+.owl-nav button span{
+  font-size: 30px;
+}
+.owl-nav{
+  
+  top: -69px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.owl-stage-outer{
+  margin-top: 20px;
+}
+
+.owl-item .item{
+  text-align: center;
+}
+
+.owl-item .item span{
+  top: 95px;
+position: relative;
+color: white;
+display: none;
+}
+
+
+.owl-carousel .owl-item img{
+  width: 165px;
+}
+.owl-carousel img
+  {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 30px;
+    width: 120px;
+    height: 165px;
+    margin-right: 15px;
+    border-radius: 50%;
+  
+}
+
+
+
+footer {
+  
+  color: white;
+  background-color:black;
+  padding-bottom: 10px;
+  
+}
+footer a{
+  color: white;
+  font-family: Oswald;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+footer h6{
+  letter-spacing: 1px;
+}
+footer .navbar-nav{
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+
+footer .row {
+  align-items: center;
+  justify-content: space-between;
+  display: flex !important;
+  flex-direction: row !important;
+  margin: 0 auto;
+  /*   justify-content:space-around; */
+  /* padding: 24px; */
+  padding-bottom: 14px;
+
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.77);
+}
+
+footer .fa-lg {
+  margin: 0 4px;
+  font-size: 31px;
+  
+}
+
+
+.footer-information {
+  padding-top: 1px;
+  display: flex;
+  /*   align-items:center!important; */
+  justify-content: space-between;
+  max-height: 20px;
+}
+
+.social-container-desktop{
+  font-family: Oswald;
+  text-align: center;
+  
+
+}
+
+.footer-information li {
+  margin-top: 1px !important;
+}
+
+.align-left {
+  max-height: 50px;
+}
+.align-right {
+  max-height: 50px;
+}
+.footer-information ul {
+  display: flex;
+  list-style: none;
+}
+.footer-information a {
+  padding: 0px 6px !important;
+  color: #990;
+}
+.social-icons li a {
+  padding: 0.5em;
+}
+footer .footer-widgets {
+  display: flex;
+  width: 70%;
+
+  overflow: hidden;
+  padding: 7px;
+}
+
+.footer-widget .card {
+  border-left: none;
+  border-right: none;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  border-top: none;
+}
+.footer-widget img {
+  max-width: 15rem;
+}
+
+.footer-widget .card-header {
+  font-family: "Oswald";
+  font-size: 1.2em;
+  font-style: normal;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  border-bottom: none;
+}
+
+.footer-widget li {
+  color: #990;
+}
+.footer-widget .list-group-item {
+  padding-top: 5px;
+}
+.padded {
+  padding: 12px;
+}
+
+.outline {
+  position: relative;
+  padding: 12px;
+  border: 2px dotted rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  width: 100%;
+  /* height: 100%; */
+  padding: 12px;
+  padding-bottom: 0;
+}
+.content-shadow {
+  margin: 0 auto;
+  /* max-width: 77vw; */
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 14px !important;
+  background-color: #fff;
+}
+/* .navbar .form-inline{
+    transform: scale(0.777);
+    position: fixed;
+    align-self: flex-start;
+    justify-self: flex-start;
+    
+} */
+
+.top-bar__form {
+  max-height: 52px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  background:var(--keto-blueberry);
+}
+.form-section-horizontal {
+  align-self: center;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+}
+
+.form-section-user {
+  padding: 0 0.5em;
+}
+
+.form-section-user svg {
+  color: whitesmoke;
+}
+
+.form-section-horizontal input {
+  padding: 0px 10px;
+  margin: 0 0.5rem;
+  justify-self: center;
+  /* border-radius: 12px 12px 12px 12px !important; */
+}
+.form-section-horizontal button {
+  font-weight: 400;
+  color: #fff;
+  /* border-radius: 12px 12px 12px 12px !important; */
+  background: var(--keto-milk);
+  border: 1px var(--keto-milk);
+}
+.top-bar__social-links svg {
+  margin: 0 0.5rem;
+  color: whitesmoke;
+}
+
+.top-bar__social-links svg:hover {
+  transform: scale(1.1);
+  color: var(--keto-cheese);
+}
+.form-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar img {
+  position: absolute;
+  margin-left: 0.5% !important;
+  margin-top: -1.7% !important;
+}
+
+.navbar-toggler {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: fixed;
+  right: 0;
+  top: 0em;
+  z-index: 999;
+}
+#navbarNavDropdown {
+  /* margin-left: -20px; */
+  background: #fff !important;
+  align-self: flex-end !important;
+}
+
+#navbar-mobile {
+  color: #888 !important;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+}
+
+/* .navbar-nav a{
+    color:#888!important;
+    font-family: 'Oswald';
+    letter-spacing: 1px;
+  
+  
+} */
+.imgFilter {
+  filter: brightness(0.9);
+}
+
+.btn.btn-primary {
+  background-color: var(--keto-milk);
+  border-color: var(--keto-milk);
+}
+
+.nav-link.enabled {
+  margin-left: 0.5em;
+}
+
+.nav-item {
+  /* border-left: 1px solid #c3c3c3; */
+}
+
+.nav-link.panel i {
+  margin-right: 7px;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.nav-link {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.nav-link:hover {
+  color: var(--keto-pepperoni) !important;
+}
+
+/*section{*/
+/* display: flex;
+    justify-content: space-evenly; */
+
+/* .carousel-inner{
+    
+    /* height: 300px!important; 
+    width: 700px!important; NO ES NECESARIO PORQUE EL DIV CLASS DE BOOTSTRAP LO ALINEA*/
+
+.carousel-item img {
+  width: 100%;
+  /* width: 100%; */
+  min-width: 100vw !important;
+  max-width: 100vw;
+
+  max-height: 700px;
+}
+
+/* .carousel-item{
+   
+    width: 80%!important;
+    margin: 0 auto!important;
+    
+    
+} */
+
+@media (min-width: 974px) {
+  #navi {
+    size: 80%;
+    transform: scale(0.8);
+  }
+  .form-inline .form-control {
+    width: 200px !important;
+    height: 30px !important;
+  }
+}
+
+/* span.psw {
+      
+    /* float: right; */
+/* padding-top: 16px; */
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* barra de busqueda */
+.md-form.mt-0 {
+  /* width:177px; */
+  /* display:flex; */
+  /* position: absolute; */
+  /* align-items: center; */
+  justify-content: flex-end !important;
+  margin-top: 1% !important;
+  margin-right: 1.5% !important;
+  /* margin-top: -40px;
+    float: right;
+    margin-left: 75%; */
+  margin-bottom: 1% !important;
+}
+
+.material-icons.mdc-button__icon {
+  padding: 0 0.5rem;
+  position: absolute;
+}
+
+.mdc-button__icon + input {
+  border: none;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+/* barra de busqueda */
+
+/* MEDIA PORT PARA MOBILES MENOS DE 1024PX DE PANTALLA */
+
+@media (max-width: 1027px) {
+  /* barra de suscripcion */
+
+  .suscripcion {
+    margin-top: 0;
+    background: var(--keto-blueberry);
+  }
+
+  .form__container {
+    color: #fff;
+  }
+  .form-row.sub {
+    max-width: 430px !important;
+    margin: 20px auto;
+  }
+  .form__container .titles {
+    text-align: center;
+    font-family: Oswald;
+    margin: 0 !important;
+    padding-top: 1px !important;
+  }
+
+  .col.sub-email {
+    max-width: calc(100% - 130px);
+    margin-bottom: 1rem;
+  }
+
+  .col.sub-email .text-muted {
+    color: #fff !important;
+  }
+  .col.submit {
+    max-width: 130px;
+  }
+  .col.submit button {
+    transition: ease-in-out 0.4s;
+  }
+  .col.submit button:hover {
+    transform: scale(1.1);
+    background: var(--keto-cheese);
+    border: var(--keto-cheese);
+    transition: ease-in-out 0.3s;
+  }
+  /* Fin barra de suscripcion //////*/
+
+  .wrapper {
+    max-width: calc(100% - 20px);
+    position: relative;
+
+    margin: 0 auto;
+   
+  }
+
+  /* Owl carousel */
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-carousel .owl-item img{
+    width: 120px;
+    height: 120px;
+  }
+  
+  
+
+  .owl-item .item{
+    width: 120px;
+    height: 120px;
+  }
+  .item__overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 120px;
+    height: 120px;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 1px;
+   
+  }
+
+  
+
+/*  Fin Owl carousel //////////////*/
+  .card-wrap {
+    max-width: calc(100% - 20px);
+    position: relative;
+    color: ket;
+
+    margin: 0 auto;
+  }
+
+  .recetas-cards-container {
+    margin-left: -7px;
+    margin-right: -7px;
+  }
+
+  .recetas-cards-container .card {
+    width: calc(1 / 2 * 100% - 16px) !important;
+  }
+
+  .entry-col img {
+    display: none;
+  }
+  .quick-links {
+    margin: 16px 0 20px;
+  }
+  .quick-links-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(100% - 37px);
+    margin: 0 auto;
+  }
+  .quick-links .quick-link {
+    flex-basis: 23%;
+    text-align: center;
+  }
+  .todo .quick-link-item::before {
+    margin-bottom: 0;
+  }
+  .quick-links .quick-link.todo {
+    flex-basis: 100%;
+  }
+  .quick-links .todo .quick-link-item {
+    width: calc(100% - (24% - 140px));
+    height: 70px;
+    padding: 0em;
+    margin-top: 10px;
+  }
+
+  .quick-link-item:hover {
+    color: white;
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+  .quick-link-item {
+    width: 108px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    color: #000;
+    background: #f9f9f9;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 70px;
+    padding: 20px 12px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .quick-link-item::before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 48px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.4s;
+  }
+
+  .quick-link-item:hover {
+    background-color: var(--keto-blueberry);
+  }
+
+  .platos-principales .quick-link-item::before {
+    background-image: url(./pngs/quick-link-platos-principales.png);
+    background-size: 48px;
+  }
+
+  .platos-principales .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-platos-principales_blanco.png);
+  }
+
+  .desayunos .quick-link-item::before {
+    background-image: url(./pngs/quick-link-desayunos.png);
+    background-size: 48px;
+  }
+  .desayunos .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-desayunos_blanco.png);
+    background-size: 48px;
+  }
+
+  .acompanamientos .quick-link-item::before {
+    background-image: url(./pngs/quick-link-acompanamientos.png);
+    background-size: 48px;
+  }
+  .acompanamientos .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-acompanamientos_blanco.png);
+  }
+  .snacks .quick-link-item::before {
+    background-image: url(./pngs/quick-link-snacks.png);
+    background-size: 48px;
+  }
+  .snacks .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-snacks_blanco.png);
+    background-size: 48px;
+  }
+  .bebidas .quick-link-item::before {
+    background-image: url(./pngs/quick-link-bebidas.png);
+    background-size: 48px;
+  }
+  .bebidas .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-bebidas_blanco.png);
+    background-size: 48px;
+  }
+  .postres .quick-link-item::before {
+    background-image: url(./pngs/quick-link-postres.png);
+    background-size: 48px;
+  }
+  .postres .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-postres_blanco.png);
+    background-size: 48px;
+  }
+
+  .sin-lactosa .quick-link-item::before {
+    background-image: url(./pngs/quick-link-sin-lactosa.png);
+    background-size: 48px;
+  }
+  .sin-lactosa .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-sin-lactosa_blanco.png);
+    background-size: 48px;
+  }
+  .vegetariano .quick-link-item::before {
+    background-image: url(./pngs/quick-link-vegetariano.png);
+    background-size: 48px;
+  }
+  .vegetariano .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-vegetariano_blanco.png);
+    background-size: 48px;
+  }
+  .todo .quick-link-item::before {
+    background-image: url(./pngs/quick-link-todo.png);
+    background-size: 48px;
+  }
+  .todo .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-todo_blanco.png);
+    background-size: 48px;
+  }
+
+  header {
+    /* height: 67px; */
+  }
+  .fondo-wrap {
+    position: relative;
+  }
+
+  .fondo-wrap .wrap {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+
+  .feature-layout-1 {
+    margin: 14px 0;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    max-height: 316px;
+  }
+  .feature-container-flexbox {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    background-color: #000;
+  }
+
+  .feature-image {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* background-color: #000; */
+    opacity: 0.45;
+    width: 100%;
+    z-index: 1;
+
+    top: auto;
+    background-color: transparent;
+     background-image: url("./components/img/5ee93076071e4967303756ff.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 100%;
+    width: 100%;
+    height: 396px;
+  }
+  a {
+    background-color: transparent;
+    color: #000;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .feature-content {
+    text-align: center;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 387px;
+    font-family: Oswald;
+    z-index: 99;
+  }
+
+  .feature-content p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    z-index: 99;
+  }
+
+  .feature-content-wrap {
+    color: #fff;
+    padding: 80px 37px 80px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .feature-content-pre-titulo {
+    font-family: "Sacramento", cursive, sans-serif;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 26px;
+    line-height: 1.4;
+
+    margin: 8px 0 0;
+  }
+
+  .titulo-feature {
+    margin-top: 0;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+  }
+  .ver-receta-container {
+    margin-top: 0.8rem;
+    transition: ease-in-out 0.4s;
+  }
+  .ver-receta-container:hover {
+    background-color: var(--keto-cheese);
+    border: var(--keto-cheese);
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s;
+  }
+
+  .feature-layout-2 {
+    margin: 14px 0;
+    max-height: 316px;
+    height: 316px;
+    position: relative;
+
+    overflow: hidden;
+
+    opacity: 1;
+  }
+
+  .feature-layout-2-wrap {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .feature-layout-2-wrap::before {
+    display: table;
+    z-index: 1;
+    content: " ";
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    background-color: transparent;
+    background-image: url("./components/keto_composition.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    opacity: 0.45;
+    /* opacity: 0.45; */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .entry-col {
+    margin-bottom: 15px;
+
+    position: relative;
+
+    overflow: hidden;
+    z-index: 1;
+
+    background-color: transparent;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .entry-link {
+    display: block;
+
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    z-index: 3;
+  }
+
+  .entry-col .pre-titulo {
+    font-size: 26px;
+    line-height: 1.7;
+    font-weight: 400;
+    font-family: "Sacramento", cursive, sans-serif;
+    /* letter-spacing: 0.1em; */
+    z-index: 2;
+    top: 37%;
+
+    text-transform: lowercase;
+    position: absolute;
+
+    color: #fff;
+
+    width: 100%;
+
+    display: block;
+
+    text-align: center;
+  }
+
+  .entry-col-titulo {
+    position: absolute;
+
+    letter-spacing: 1.6px;
+    font-family: Oswald, sans-serif;
+    z-index: 2;
+    color: #fff;
+
+    width: 100%;
+    font-weight: 700;
+    display: block;
+
+    text-align: center;
+
+    top: 48%;
+  }
+
+  html {
+    max-width: 100vw !important;
+    margin-left: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .logo-rating-stars {
+    display: initial !important;
+  }
+
+  .material-icons {
+  }
+  .receta-keto {
+    padding-top: 10px !important;
+  }
+
+  .receta-header {
+    /* max-height: 98px; */
+  }
+
+  
+
+  .receta-keto-header {
+    
+    margin-bottom: 0;
+  }
+
+  .header-image {
+    position: relative;
+    max-width: 138px !important;
+    margin: -10px -10px -7px auto;
+    float: right;
+  }
+
+  .header-image img {
+    border-radius: 500px;
+    max-width: 138px;
+    height: 138px;
+    margin: 10px 0 20px 24px;
+    float: right;
+    border-width: 0px;
+    border-style: solid;
+  }
+
+  .content-shadow {
+    max-width: 100%;
+  }
+  /* #cartas .row {
+    width: 100% !important;
+    max-width: 100%;
+  } */
+  /* #cartas .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 400px;
+  } */
+
+  #featured-img {
+    width: 100%;
+  }
+
+  #desktop-navbar {
+    display: none;
+  }
+
+  #myCarousel {
+    max-height: 400px;
+    max-width: 100vw;
+  }
+
+  .imagefooter {
+    margin: 0 auto;
+  }
+
+  .content-sidebar-wrap {
+    margin: 50px 10px;
+    max-width: calc(1020px -20px);
+  }
+
+  .content-wrap {
+    /* max-width: 380px; */
+    max-width: 88vw !important;
+  }
+
+  .row .maximo {
+    max-width: 1020px !important;
+  }
+
+  .content {
+    margin: 0 auto !important;
+
+    max-width: 650px !important;
+    width: 100% !important;
+  }
+
+  .carousel-caption {
+    top: -25px;
+
+    transform: scale(0.777);
+  }
+
+  header .navbar {
+    width: 100%;
+    height: 67px;
+    top: 0;
+    z-index: 999 !important;
+    position: fixed !important;
+  }
+
+  .navbar-wrap {
+    display: none;
+  }
+
+  #logo-navbar-mobile {
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+    width: 250px !important;
+    height: 67px !important;
+    z-index: 9999 !important;
+    margin: 0 auto;
+    max-height: 120px !important;
+    max-width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    background-image: url("./logo_small.jpg");
+    background-size: 100%;
+    background-position: left top center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px !important;
+  }
+
+  #navbar-mobile {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    margin-top: 65px !important;
+    margin-left: 11px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  footer .container-fluid {
+    /* width: 90vw !important; */
+
+    height: max-content;
+    /* height: max-content!important; */
+  }
+  footer .content-shadow {
+    width: 100%;
+    height: max-content;
+    /* height: 30vh!important; */
+  }
+  footer .footer-widgets {
+    width: 100%;
+
+    flex-direction: column;
+  }
+  footer .row {
+    align-content: center;
+    flex-direction: column;
+    height: max-content;
+  }
+  footer .footer-widget img {
+    max-width: 13rem;
+  }
+
+  .top-bar {
+    /* max-width: 100%; */
+    display: none;
+  }
+}
+
+@media (min-width: 1027px) {
+  .suscripcion {
+    margin-top: 0;
+    background: var(--keto-blueberry);
+  }
+
+
+
+  .form__container {
+    color: #fff;
+  }
+  .form-row.sub {
+    max-width: 430px !important;
+    margin: 20px auto;
+  }
+  .form__container .titles {
+    text-align: center;
+    font-family: Oswald;
+    margin: 0 !important;
+    padding-top: 1px !important;
+  }
+
+  .col.sub-email {
+    max-width: calc(100% - 130px);
+    margin-bottom: 1rem;
+  }
+
+  .col.sub-email .text-muted {
+    color: #fff !important;
+  }
+  .col.submit {
+    max-width: 130px;
+  }
+  .col.submit button {
+    transition: ease-in-out 0.4s;
+  }
+  .col.submit button:hover {
+    transform: scale(1.1);
+    background: var(--keto-cheese);
+    border: var(--keto-cheese);
+    transition: ease-in-out 0.3s;
+  }
+
+  .quick-links {
+    margin: 12px 0 20px;
+  }
+  .quick-links-wrap {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  .quick-links .quick-link {
+    flex-basis: 23%;
+
+    text-align: center;
+  }
+
+  .quick-link-item {
+    width: 108px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 122px;
+    margin: 0 auto 12px;
+    /* font-weight: 600; */
+    font-size: 13.3px;
+    line-height: 1;
+    color: #000;
+    background: #f9f9f9;
+    font-family: Oswald, sans-serif;
+    border-radius: 70px;
+    padding: 20px 12px;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.9px;
+  }
+
+  .quick-link-item:hover {
+    text-decoration: none;
+    color: #fff;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.17);
+    background-color: var(--keto-blueberry);
+  }
+
+  .quick-link-item::before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 48px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.4s;
+  }
+
+  .platos-principales .quick-link-item::before {
+    background-image: url(./pngs/quick-link-platos-principales.png);
+    background-size: 43px;
+  }
+
+  .platos-principales .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-platos-principales_blanco.png);
+  }
+
+  .desayunos .quick-link-item::before {
+    background-image: url(./pngs/quick-link-desayunos.png);
+    background-size: 43px;
+  }
+  .desayunos .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-desayunos_blanco.png);
+    background-size: 43px;
+  }
+
+  .acompanamientos .quick-link-item::before {
+    background-image: url(./pngs/quick-link-acompanamientos.png);
+    background-size: 43px;
+  }
+  .acompanamientos .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-acompanamientos_blanco.png);
+  }
+  .snacks .quick-link-item::before {
+    background-image: url(./pngs/quick-link-snacks.png);
+    background-size: 43px;
+  }
+  .snacks .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-snacks_blanco.png);
+    background-size: 43px;
+  }
+  .bebidas .quick-link-item::before {
+    background-image: url(./pngs/quick-link-bebidas.png);
+    background-size: 43px;
+  }
+  .bebidas .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-bebidas_blanco.png);
+  }
+  .postres .quick-link-item::before {
+    background-image: url(./pngs/quick-link-postres.png);
+    background-size: 43px;
+  }
+  .postres .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-postres_blanco.png);
+  }
+
+  .sin-lactosa .quick-link-item::before {
+    background-image: url(./pngs/quick-link-sin-lactosa.png);
+    background-size: 43px;
+  }
+  .sin-lactosa .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-sin-lactosa_blanco.png);
+  }
+  .vegetariano .quick-link-item::before {
+    background-image: url(./pngs/quick-link-vegetariano.png);
+    background-size: 43px;
+  }
+  .vegetariano .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-vegetariano_blanco.png);
+  }
+  .todo .quick-link-item::before {
+    background-image: url(./pngs/quick-link-todo.png);
+    background-size: 43px;
+  }
+  .todo .quick-link-item:hover:before {
+    background-image: url(./pngs/quick-link-todo_blanco.png);
+  }
+
+  /* INICIO CSS LATEST POST */
+  .fondo-wrap {
+    content: "";
+
+    position: relative;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    /* background-image: url(./leche_almendras.jpeg); */
+
+    background-size: 100%;
+
+    z-index: 1;
+  }
+
+  .wrapper {
+    position: relative;
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .wrap {
+    position: relative;
+    max-width: 1020px;
+    margin: 0 auto;
+    z-index: 2;
+    /* max-height: 450px;
+    height: 450px; */
+    height: 450px;
+  }
+
+  .card-wrap {
+    position: relative;
+    max-width: 1020px;
+    margin: 0 auto;
+    z-index: 2;
+    /* max-height: 450px;
+    height: 450px; */
+    height: 550px;
+  }
+
+  .feature-layout-1 {
+    width: calc(74% - 25px);
+
+    float: left;
+
+    margin-top: 33px;
+
+    padding-bottom: 33px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    opacity: 1;
+  }
+
+  .feature-container-flexbox {
+    margin-left: -7px;
+    /* box-shadow: 0 3px 6px 0 rgba(0,0,0,.10); */
+    margin-right: 0px;
+    display: flex;
+    height: 396px;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+
+  .feature-image {
+    flex-basis: 396px;
+    margin: 0;
+    position: relative;
+    top: auto;
+    background-color: transparent;
+    /* background-image: url("./components/pancake_keto.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 125%;
+    width: 100%;
+    height: 396px;
+  }
+  .feature-image img {
+    /* width: 100%;
+    height: 100%; */
+  }
+  .feature-image a:hover {
+    opacity: 1;
+  }
+  .feature-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./double-bubble.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    opacity: 0.57;
+    z-index: 1;
+  }
+  .feature-content {
+    flex-basis: 340px;
+    display: flex;
+    background-color: #fff;
+
+    width: auto;
+
+    height: 396px;
+
+    margin: 0;
+
+    color: #000;
+    text-align: center;
+
+    position: relative;
+  }
+
+  .feature-content-wrap {
+    padding: 0;
+    position: relative;
+    /* align-self: center; */
+
+    margin: auto;
+    z-index: 2;
+  }
+
+  .ver-receta-container {
+    display: block;
+    width: 55%;
+
+    margin: 0 auto;
+
+    margin-top: 0px;
+
+    margin-top: 31px;
+
+    text-align: center;
+
+    line-height: 1em;
+
+    transition: ease-in-out 0.3s;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Oswald;
+    letter-spacing: 0.9px;
+  }
+
+  .ver-receta-container:hover {
+    background-color: var(--keto-cheese);
+    border: var(--keto-cheese);
+    overflow: hidden;
+    transform: scale(1.1);
+
+    transition: ease-in-out 0.3s;
+  }
+
+  .feature-content-pre-titulo {
+    font-family: "Sacramento", cursive, sans-serif;
+
+    font-weight: 400;
+
+    text-transform: lowercase;
+
+    font-size: 26px;
+
+    line-height: 1.4;
+
+    margin-bottom: 0;
+
+    margin: 8px 0 12px;
+  }
+
+  .feature-content p {
+    font-size: 12px;
+
+    margin-top: 12px;
+  }
+
+  .titulo-feature {
+    font-size: 35px;
+    font-family: Oswald;
+  }
+
+  /* .feature-content-wrap {
+    padding: 54px 54px 0;
+  } */
+
+  .feature-layout-2 {
+    width: calc(26% - 26px);
+    height: 396px;
+    float: right;
+
+    margin-top: 33px;
+  }
+
+  .entry-col {
+    margin-bottom: 15px;
+    background-color: #000;
+    position: relative;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 396px;
+  }
+
+  .entry-col img {
+    display: block;
+    opacity: 0.7;
+    height: 500px;
+  }
+
+  .pre-titulo {
+    font-size: 30px;
+    font-weight: 400;
+
+    letter-spacing: 0.1px;
+
+    top: 32%;
+
+    text-transform: lowercase;
+
+    position: absolute;
+
+    font-family: "Sacramento", cursive, sans-serif;
+
+    color: #fff;
+
+    width: 100%;
+
+    display: block;
+
+    text-align: center;
+    line-height: 1.4;
+
+    margin-bottom: 0;
+  }
+
+  .entry-col-titulo {
+    position: absolute;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    width: 100%;
+    display: block;
+    text-align: center;
+    top: 48%;
+    font-size: 18px;
+  }
+
+  /* fin CSS LATEST POST */
+  .content-sidebar-wrap {
+    margin: 16px auto;
+    max-width: 77vw;
+    display: flex;
+  }
+
+  .header-image img {
+    border-radius: 500px;
+    max-width: 200px;
+    height: 200px;
+    margin: 0 0 20px 24px;
+    float: right;
+    border-width: 0px;
+    border-style: solid;
+  }
+
+  footer .container-fluid {
+    /* setting for large devices */
+    width: 89.8vw !important;
+  }
+
+  .content-wrap {
+    /* flex-direction: row !important; */
+    /* max-width: 380px; */
+    max-width: initial !important;
+  }
+
+  .inner-wrap {
+    max-width: 88vw !important;
+  }
+
+  .navbar {
+    padding: 0px;
+    z-index: 99 !important;
+    position: relative !important;
+    display: block;
+    /* min-height: 183px!important; */
+    max-width: 100% !important;
+    width: 100% !important;
+    /* color:#888!important; */
+    /* padding: auto 0; */
+    font-size: 1.5rem !important;
+    font-weight: 400;
+    background: #fff !important;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7) !important;
+    border-top: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+  }
+  .navbar-wrap {
+    margin: 0 auto;
+    max-width: 1020px;
+    width: 1020px;
+  }
+  .navbar-brand {
+    display: block;
+    position: relative;
+    height: 134px;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  #logo-navbar {
+    margin: 0 auto;
+    width: 700px;
+    height: 100% !important;
+    max-height: 122px !important;
+    z-index: 9999 !important;
+    display: block;
+    position: relative;
+    /* top: 0; */
+
+    background-image: url("./keto_real.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+
+  #navbar-mobile {
+    display: none;
+  }
+
+  #desktop-navbar {
+    /* margin: 0 auto; */
+
+    /* position: absolute; */
+    /* left: 0; */
+    max-width: 1020px !important;
+    width: 1020px !important;
+    /* align-self: flex-end !important; */
+    /* justify-content: space-between; */
+    justify-content: space-between !important;
+    color: #888 !important;
+    font-family: "Oswald";
+    letter-spacing: 1px;
+  }
+
+  #desktop-navbar a {
+    padding-left: 0;
+  }
+
+  .carousel-caption {
+    top: 30vh;
+  }
+}
+
+/*   NUTRITION FACT CSS @import "compass/css3";    */
+
+.image {
+  width: 250px;
+  float: left;
+  margin: 20px;
+}
+body {
+  font-size: small;
+  line-height: 1.4;
+}
+p {
+  margin: 0;
+}
+
+.performance-facts {
+  border: 1px solid black;
+  margin: 20px;
+  float: left;
+  width: 280px;
+  padding: 0.5rem;
+  table {
+    border-collapse: collapse;
+  }
+}
+.performance-facts__title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+}
+.performance-facts__header {
+  border-bottom: 10px solid black;
+  padding: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
+  p {
+    margin: 0;
+  }
+}
+.performance-facts__table {
+  margin-top: 90px;
+  width: 100%;
+
+  thead tr {
+    th,
+    td {
+      border: 0;
+    }
+  }
+  th,
+  td {
+    font-weight: normal;
+    text-align: left;
+    padding: 0.25rem 0;
+    border-top: 1px solid black;
+    white-space: nowrap;
+  }
+  td {
+    &:last-child {
+      text-align: right;
+    }
+  }
+  .blank-cell {
+    width: 1rem;
+    border-top: 0;
+  }
+  .thick-row {
+    th,
+    td {
+      border-top-width: 5px;
+    }
+  }
+}
+.small-info {
+  font-size: 0.7rem;
+}
+
+.performance-facts__table--small {
+  @extend .performance-facts__table;
+  border-bottom: 1px solid #999;
+  margin: 0 0 0.5rem 0;
+  thead {
+    tr {
+      border-bottom: 1px solid black;
+    }
+  }
+  td {
+    &:last-child {
+      text-align: left;
+    }
+  }
+  th,
+  td {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.performance-facts__table--grid {
+  @extend .performance-facts__table;
+  margin: 0 0 0.5rem 0;
+  td {
+    &:last-child {
+      text-align: left;
+      &::before {
+        content: "•";
+        font-weight: bold;
+        margin: 0 0.25rem 0 0;
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.thick-end {
+  border-bottom: 10px solid black;
+}
+.thin-end {
+  border-bottom: 1px solid black;
+}
+
+/*   NUTRITION FACT CSS     */
+
+/* RECIPE CARD CSS_BY MMEYER INSPIRED IN KETOCONNECT */
+
+.receta-container {
+  width: 100% !important;
+  margin-top: 36px;
+
+  padding: 12px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4) !important;
+  border-radius: 14px !important;
+}
+
+.receta-keto {
+  padding: 36px 28px 0;
+
+  position: relative;
+  background-color: #fff;
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #888;
+  border: 2px dotted rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  min-height: 100px;
+}
+
+.receta-keto-header {
+  text-align: left;
+  min-height: fit-content;
+  margin-bottom: 16px;
+}
+
+.receta-keto-info {
+  clear: both;
+  margin-left: -28px;
+  margin-right: -28px;
+  font-size: 17px;
+  text-align: center;
+}
+.receta-keto-info-columns {
+  display: flex;
+  flex-wrap: wrap;
+  border-color: #888;
+  border-top: 2px dotted rgba(0, 0, 0, 0.12);
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.12);
+}
+
+.receta-keto-info-columns .details-label {
+  margin: 0 0 2px;
+  flex: 1 0 100%;
+}
+
+.receta-keto-info .block-container {
+  flex-basis: 20%;
+  padding: 20px 8px;
+  flex: 1 1 32%;
+  text-align: center;
+  padding: 16px 8px;
+  border-left: 2px dotted rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.receta-keto-info-columns .block-container:nth-of-type(3n + 1) {
+  border-left-width: 0;
+}
+
+.logo-rating-stars {
+  display: flex;
+  width: calc(100% - 224px);
+  margin: -12px 0 12px;
+}
+
+.rating__stars {
+  /* margin-left: 10px; */
+  align-self: center;
+  max-width: 120px;
+  margin-top: -7px;
+}
+
+.rating_logo {
+  margin-top: 5px;
+  /* margin-left: 29px; */
+  /* margin-right: 10px; */
+  width: 57px;
+  background-image: url("./logo_keto.png");
+  background-size: 57px;
+  background-position: left top center;
+  background-repeat: no-repeat;
+  height: 77px !important;
+}
+
+.receta-keto-info-inline {
+  padding: 12px 8px 12px 12px;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.receta-keto-content {
+  margin-top: 28px;
+}
+.ingredients-group ul {
+  list-style: none;
+  margin-left: -30px;
+}
+.ingredients-group li {
+  margin-top: 5px;
+
+  display: flex;
+  font-size: 17px;
+}
+
+.ingredients-group li input {
+  margin-right: 8px;
+}
+
+.ingredients-group li span {
+  margin-top: -5px;
+}
+
+.crossed-line {
+  text-decoration: line-through;
+}
+
+.instructions-group ul {
+  margin-left: 32px !important;
+  padding-left: 0 !important;
+  list-style: none;
+}
+
+.instructions-group li {
+  font-size: 17px;
+  counter-increment: instruction-counter;
+  margin-bottom: 8px;
+}
+
+.instructions-group li::before {
+  content: counter(instruction-counter);
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: var(--keto-pepperoni);
+  border-radius: 100%;
+  margin-top: 0px;
+  margin-left: -28px;
+  font-weight: 700;
+  font-size: 13px;
+  border: 0;
+  padding-left: 0.1em;
+}
+
+/* inicio media port por menos de 426px */
+@media (max-width: 428px) {
+  .feature-content-wrap {
+    padding: 23px 37px 80px !important;
+  }
+
+  .quick-links-wrap {
+    max-width: 320px !important;
+  }
+
+  .quick-links .quick-link.todo {
+    flex-basis: 100% !important;
+  }
+  .quick-links .todo .quick-link-item {
+    margin: 10px auto;
+    /* width: calc(100% - (24% - 40px)) !important; */
+    width: 100%;
+    height: 70px !important;
+    padding: 0em;
+  }
+  .quick-links .todo .quick-link-item {
+    width: 100% !important;
+    height: 130px;
+  }
+}
+/* fin media port por menos de 426px */
+
+
+@media (max-width: 768px) {
+
+  h1{
+    font-size: 24px;
+  }
+
+
+  .quick-links .quick-link.todo {
+    flex-basis: 23%;
+  }
+  .quick-links .todo .quick-link-item {
+    width: 130px;
+    height: 130px;
+  }
+  .receta-title{
+    font-size: 24px;
+  }
+
+  .feature-content-wrap {
+    padding: 50px 37px 80px;
+  }
+
+  .carousel__calculadora{
+    padding: 72px;
+  }
+
+}

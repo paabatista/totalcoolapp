@@ -1,0 +1,7 @@
+/node_modules
+package-lock.json
+node.pem
+mongodbpass.txt
+logo_keto.png
+SSH INFO.txt
+.env
